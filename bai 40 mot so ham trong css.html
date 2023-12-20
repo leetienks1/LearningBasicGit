@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+         Mot so bien trong css
+        </title>
+        <style>
+            .box{
+                width: calc(10px+90px);
+                height: 120px;
+                background: rgb(194, 17, 17);
+            }
+            .box::after{
+                content:attr(data-type);
+            }
+            a::after{
+                content: "("attr(href)")";
+            }
+
+        </style>
+    </head>
+    
+    <body>
+        
+        <div class="box" data-type="day la be quyen ngu ngoc"> </div>
+        <a href="https://www.facebook.com/hoquyendilys">Facebook be quyen</a>
+        <h1>
+            CSS funtion
+        </h1>
+        <ul>
+            <li>var()</li>
+            <li>linear-gadient()</li>
+            <li>rgba()</li>
+            <li>rgb()</li>
+             <li>calc()</li> <!--ham tinh toan -->
+            <li>attr()</li>
+        </ul>
+        <script src="./main.js"></script>
+    </body>
+</html>
